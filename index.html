@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مدونتي الشخصية</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background: #555;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .post {
-      margin-bottom: 20px;
-    }
-    .post h2 {
-      margin-top: 0;
-    }
-    .post p {
-      text-align: justify;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background: #333;
-      color: #fff;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need - موقع مشاهدة المسلسلات</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>مرحبًا بكم في مدونتي</h1>
-    <p>مكان لمشاركة أفكاري وتجربتي</p>
-  </header>
-  <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#">عن المدونة</a>
-    <a href="#">اتصل بي</a>
-  </nav>
-  <div class="container">
-    <div class="post">
-      <h2>أول تدوينة لي</h2>
-      <p>مرحبًا بكم في مدونتي الشخصية! هذا هو أول مقال أنشره. هنا سأشارككم أفكاري، خبراتي، ونصائحي حول مختلف المواضيع. شكرًا لزيارتكم وأتمنى أن تجدوا محتواي مفيدًا.</p>
-    </div>
-    <div class="post">
-      <h2>موضوع شيق آخر</h2>
-      <p>في هذا القسم سأناقش موضوعًا شيقًا يهم الكثير منكم. ترقبوا المزيد من المقالات المثيرة قريبًا!</p>
-    </div>
-  </div>
-  <footer>
-    <p>&copy; 2024 مدونتي الشخصية. جميع الحقوق محفوظة.</p>
-  </footer>
-</body>
-</html>
+    <!-- رأس الموقع -->
+    <header class="header">
+        <div class="container">
+            <h1>Need</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#series">المسلسلات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>أهلاً بك في موقع Need</h2>
+            <p>استمتع بمشاهدة أحدث المسلسلات بجودة عالية وتصميم مميز.</p>
+        </div>
+    </section>
+
+    <!-- قسم المسلسلات -->
+    <section id="series" class="series">
+        <div class="container">
+            <h2>المسلسلات</h2>
+            <!-- أيقونة المسلسل -->
+            <div class="series-icon" onclick="toggleSeasons()">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg" alt="صراع العروش">
+                <h3>صراع العروش</h3>
+            </div>
+            <!-- قائمة المواسم -->
+            <div id="seasons-list" class="seasons hidden">
+                <!-- الموسم الأول -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Game_of_Thrones_Season_1.jpg" alt="صراع العروش - الموسم الأول">
+                    <h3>الموسم الأول</h3>
+                </div>
+                <!-- الموسم الثاني -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Game_of_Thrones_Season_2.jpg" alt="صراع العروش - الموسم الثاني">
+                    <h3>الموسم الثاني</h3>
+                </div>
+                <!-- الموسم الثالث -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Game_of_Thrones_Season_3.jpg" alt="صراع العروش - الموسم الثالث">
+                    <h3>الموسم الثالث</h3>
+                </div>
+                <!-- الموسم الرابع -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Game_of_Thrones_Season_4.jpg" alt="صراع العروش - الموسم الرابع">
+                    <h3>الموسم الرابع</h3>
+                </div>
+                <!-- الموسم الخامس -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/92/Game_of_Thrones_Season_5.jpg" alt="صراع العروش - الموسم الخامس">
+                    <h3>الموسم الخامس</h3>
+                </div>
+                <!-- الموسم السادس -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Game_of_Thrones_Season_6.jpg" alt="صراع العروش - الموسم السادس">
+                    <h3>الموسم السادس</h3>
+                </div>
+                <!-- الموسم السابع -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/61/Game_of_Thrones_Season_7.jpg" alt="صراع العروش - الموسم السابع">
+                    <h3>الموسم السابع</h3>
+                </div>
+                <!-- الموسم الثامن -->
+                <div class="series-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Game_of_Thrones_Season_8.png" alt="صراع العروش - الموسم الثامن">
+                    <h3>الموسم الثامن</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>حقوق النشر © 2025 - موقع Need</p>
+            <p>الموقع من تطوير: <strong>ABAS SATAR BHOO</strong></p>
+            <p>تواصل معنا عبر: <a href="https://t.
